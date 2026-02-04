@@ -6,10 +6,9 @@
 
 from huggingface_hub import create_repo, upload_folder
 
-# 设置模型名称（在你 HuggingFace 账号下）
 repo_name = "xxxxx/Qwen3-4B-webshop-gpt"
 
-repo_id = repo_name  # 若是上传到你自己账号
+repo_id = repo_name  
 
 # 创建仓库（自动跳过已存在）
 create_repo(repo_id, exist_ok=True)

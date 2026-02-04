@@ -39,7 +39,6 @@ WANDB_API_KEY="xxxxxxxx" # Modify your wandb key
 if [ "$WANDB_API_KEY" != "" ]; then
     wandb login --relogin $WANDB_API_KEY
     mkdir -p wandb/${project_name}/${experiment_name}
-    export WANDB_ENTITY=will-ucla
 fi
 
 # We only use data preparation to indicate the modality and the data size.
